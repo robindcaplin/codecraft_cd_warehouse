@@ -1,7 +1,16 @@
 package org.example;
 
 public class CD {
+    public String name;
     private int quantity;
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public CD(String name) {
+        this.name = name;
+    }
 
     public boolean buy() {
         if (quantity < 1) {
